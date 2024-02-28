@@ -1,5 +1,3 @@
-let dataPeliculas;
-
 async function fetchDataPeliculas() {
     try {
   const respuesta = await fetch('https://jsonplaceholder.typicode.com/posts', {
@@ -44,7 +42,7 @@ async function fetchDataPeliculas() {
   return respuesta;
     }
     catch {
-        console.error('Error fetching data:', error);
+        console.error('rror en el catch (usar google chrome para ver el proyecto):', error);
         throw error;
     }
 
